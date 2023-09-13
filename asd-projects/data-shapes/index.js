@@ -48,11 +48,11 @@ $(document).ready(function () {
   // TODO 2: add a new property to all data shapes
   for (var i = 0; i < dataShapes.length; i++){
     var currentShape = dataShapes[i];
-    if (currentShape = "red"){
+    if (currentShape === "red"){
       goodBehavior = "bounce"
-    }else if(currentShape = "blue"){
+    }else if(currentShape === "blue"){
       goodBehavior = "blink"
-    } else { goodBehavior = "spin"};
+    } else { goodBehavior === "spin"};
   }
   
 
@@ -74,7 +74,7 @@ $(document).ready(function () {
 
   // TODO 5-a: add a function that handles the bad display type
   function handleBad(data, repeat){
-      repeat + 1;
+      repeat = repeat + 1
       setBackgroundWithMixed(data, repeat)
       animationDetails.displayType = 3
   }
