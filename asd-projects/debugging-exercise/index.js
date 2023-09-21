@@ -48,7 +48,7 @@ function makeCircle(id){
     
     // this gives the circle object all of the data that it needs to store
     circle.id = "#" + id;
-    circle.x = Math.random() * maXX + circleRadius;
+    circle.x = Math.random() * maxX + circleRadius;
     circle.y = Math.random() * maxY + circleRadius;
     circle.speedX = decideSpeed();
     circle.speedY = desideSpeed();
@@ -67,7 +67,7 @@ function getId(number){
 }
 
 // this adds a circle into the HTML
-funtion addNewCircleElement(circle, id){
+function addNewCircleElement(circle, id){
 
     // this creates the HTML for a new circle element 
     var $circle = $('<div>').attr('id', id)
@@ -84,7 +84,7 @@ funtion addNewCircleElement(circle, id){
 //////////////////
 
 // this should move all of the circles
-function update){
+function update(){
 
     // loop over the circles array. We use the maxCircles variable instead of circles.length
     // to make seeing issues in the debugger slightly easier (in practice, you should use
@@ -117,7 +117,7 @@ function moveCircle(circle){
 function bounceCircle(circle){
 
     // this bounces off the left wall
-    if (circle.x < 0{
+    if (circle.x < 0){
         circle.x -= circle.speedX;
         circle.speedX *= -1;
     }
@@ -146,5 +146,5 @@ function updateCircleOnScreen(circle){
     $(circle.id).css('left', circle.x);
     $(circle.id).css('top', circle.y);
 }
-
+debugger;
 });
